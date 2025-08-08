@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>this website is entirely html and css</title>
     <link rel="stylesheet" href="./style.css">
@@ -15,7 +16,7 @@
         margin-top: 50px;
         display: grid;
         grid-template-columns: repeat(8, 125px);
-        grid-template-rows: repeat(5, 125px);
+        grid-template-rows: repeat(6, 125px);
         gap: 15px;
         grid-template-areas: 
         "box-1 box-1 box-2 box-2 box-2 box-2 box-2 box-2"
@@ -24,6 +25,24 @@
         "box-1 box-1 box-5 box-5 box-5 box-6 box-6 box-6"
         "box-1 box-1 box-5 box-5 box-5 box-6 box-6 box-6"
         "box-1 box-1 box-5 box-5 box-5 box-6 box-6 box-6";
+    }
+
+    @media only screen and (max-width: 550px){
+        .grid-container{
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            place-content: center;
+            grid-template-columns: 1fr 1.6fr;
+            grid-template-rows: repeat(5, 125px);
+            justify-content: center;
+            grid-template-areas: 
+            "box-1 box-2"
+            "box-1 box-3"
+            "box-1 box-4"
+            "box-1 box-5"
+            "box-1 box-6";
+        }
     }
     </style>
 </head>
@@ -70,7 +89,7 @@
             <img src="images/snom.png">
         </div>
         <div class="box" style="grid-area: box-3">
-            <h1>Quote</h1>
+            <h1 class="RMspacing">Quote</h1>
             "Lorem Ipsum Obligatory Quote"   
         </div>
         <div class="box" style="grid-area: box-4">

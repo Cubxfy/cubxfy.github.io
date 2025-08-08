@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>this website is entirely html and css</title>
     <link rel="stylesheet" href="style.css">
@@ -20,6 +21,22 @@
         grid-template-areas: 
         "box-1 box-2"
         "box-1 box-3";
+    }
+
+    @media only screen and (max-width: 550px){
+        .grid-container{
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            grid-template-columns: 1.6fr;
+            grid-template-rows: 250px 150px 50px 1fr;
+            justify-content: center;
+            grid-template-areas: 
+            "box-1"
+            "box-2"
+            "box-3"
+            ".";
+        }
     }
     </style>
 </head>
@@ -87,40 +104,9 @@
             <p>External Links WIP</p>
         </div>
     </div>
+    
 
-    <div class="grid-container">
-        <div class="box" style="grid-area: box-1">
-            <p>img soon™</p>
-        </div>
-        <div class="box" style="grid-area: box-2">
-            <h4 class="RMspacing" style="margin: 5px;">
-                Some Title
-            </h4>
-            <p class="RMspacing" style="margin: 5px;"> 
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam inventore magnam sit voluptatum, ex, aliquid quis ducimus quasi praesentium, dicta voluptate aperiam. Dignissimos quae magni tempora dicta ad est alias!
-            </p>
-        </div>
-        <div class="box centered" style="grid-area: box-3">
-            <p>External Links WIP</p>
-        </div>
-    </div>
 
-    <div class="grid-container" style="margin-bottom: 50px;">
-        <div class="box" style="grid-area: box-1">
-            <p>img soon™</p>
-        </div>
-        <div class="box" style="grid-area: box-2">
-            <h4 class="RMspacing" style="margin: 5px;">
-                Some Title
-            </h4>
-            <p class="RMspacing" style="margin: 5px;"> 
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam inventore magnam sit voluptatum, ex, aliquid quis ducimus quasi praesentium, dicta voluptate aperiam. Dignissimos quae magni tempora dicta ad est alias!
-            </p>
-        </div>
-        <div class="box centered" style="grid-area: box-3">
-            <p>External Links WIP</p>
-        </div>
-    </div>
     
     <div class="botbar">
         <p>Last Updated: Today | Made by @Cubxfy</p>
