@@ -1,41 +1,132 @@
-/* header {
-    position: relative;
-    bottom: 10  00px;
-    color: #FBFBFB;
-    width: 100%;
-    padding: 1em;
-    text-align: center;
-} */
-
-body{
-    color: #FBFBFB;
-    background-color: #0D0D0D;
-    min-height: 100dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2%;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  background-color: #0D0D0D;
+  color: #FBFBFB;
 }
 
 
-.box{
+/*TOP AND NAVBAR*/
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    width: 100%;
+    background-color: #0D0D0D;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
     background-color: #393939;
     border-radius: 20px;
-    padding: 1em
+    max-width: 500px;
+    padding: 0 5px;
+    text-align: center;
 }
 
-.accent{
-    background-color: #FBFBFB;
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr 2fr;
-    gap: 1em;
-    grid-template-areas: 
-    "box-1 box-2 box-2 box-2"
-    "box-3 box-4 box-5 box-5"
-    "box-3 box-4 box-5 box-5"
-    "box-3 box-6 box-6 box-6";
+.navbar li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.navbar a {
+    color: #FBFBFB;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background-color: #0D0D0D;
+}
+
+
+/*BENTO GRID STUFF*/
+/* .main-content{
+    flex: 1 0 auto;
+} */
+
+.box {
+    background-color: #393939;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.accent {
+    background-color: #c5e4f7;
+}
+
+.spacing {
+    background-color: #0D0D0D;
+}
+
+/*BOTBAR*/
+.botbar {
+  margin-top: auto; 
+  font-size: small;
+  /* background-color: #393939; */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+/*IMG MANIPULATION*/
+.centeredimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatarimg img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #FBFBFB;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/*TEXT MANIPULATION*/
+.RMspacing{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }

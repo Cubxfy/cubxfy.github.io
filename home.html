@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this website is entirely html and css</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .grid-container{
+        overflow: visible;
+        position: relative;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(8, 125px);
+        grid-template-rows: repeat(5, 125px);
+        gap: 15px;
+        grid-template-areas: 
+        "box-1 box-1 box-2 box-2 box-2 box-2 box-2 box-2"
+        "box-1 box-1 box-3 box-3 box-4 box-4 box-4 box-4"
+        "box-1 box-1 box-3 box-3 box-4 box-4 box-4 box-4"
+        "box-1 box-1 box-5 box-5 box-5 box-6 box-6 box-6"
+        "box-1 box-1 box-5 box-5 box-5 box-6 box-6 box-6"
+        "box-1 box-1 box-5 box-5 box-5 box-6 box-6 box-6";
+    }
+    </style>
+</head>
+
+
+<body>
+    <div class="topbar">
+        <nav class="navbar sticky">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="misc.html">Misc</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="grid-container">
+        <div class="box" style="grid-area: box-1">
+            <div class="avatarimg">
+                <img src="images/profilepicture.png" height="100px" width="100px">
+            </div>
+            <h2>Hey 👋</h2>
+
+            <p>I do graphic design and code stuff. <br> Cybersecurity, Motorsports and Pokemon fan.
+            </p>
+
+            <h3 class="RMspacing" style="margin-top: 75px;"</h3>
+                What I know
+            </h3>
+            <p class="RMspacing" style="margin-top: 10px;">
+                <small>all placeholder until I add icons</small>
+                Python<br>
+                HTML<br>
+                CSS<br>
+                C<br>
+                SQL<br>
+                <br>
+                Figma<br>
+            </p>
+
+            
+        </div>
+        <div class="box fill" style="grid-area: box-2">
+            <img src="images/snom.png">
+        </div>
+        <div class="box" style="grid-area: box-3">
+            <h1>Quote</h1>
+            "Lorem Ipsum Obligatory Quote"   
+        </div>
+        <div class="box" style="grid-area: box-4">
+            I should put this block up for sale. 5$ adspace kinda thing
+        </div>
+        <div class="box" style="grid-area: box-5">
+            <h1>WIP</h1>
+        </div>
+        <div class="box" style="grid-area: box-6">
+            <h1>WIP</h1>
+        </div>
+
+    </div>
+    <div class="botbar">
+        <p>Last Updated: Today | Made by @Cubxfy</p>
+    </div>
+</body>
+</html>
