@@ -16,13 +16,13 @@
         margin-top: 50px;
         display: grid;
         grid-template-columns: repeat(8, 125px);
-        grid-template-rows: repeat(6, 125px);
+        grid-template-rows: repeat(5, 125px);
         gap: 15px;
         grid-template-areas: 
-        "box-1 box-1 box-2 box-2 box-2 box-2 box-2 box-2"
+        "box-1 box-1 box-2 box-2 box-2 box-2 box-7 box-7"
+        "box-1 box-1 box-2 box-2 box-2 box-2 box-7 box-7"
         "box-1 box-1 box-3 box-3 box-4 box-4 box-4 box-4"
         "box-1 box-1 box-3 box-3 box-4 box-4 box-4 box-4"
-        "box-1 box-1 box-5 box-5 box-5 box-6 box-6 box-6"
         "box-1 box-1 box-5 box-5 box-5 box-6 box-6 box-6"
         "box-1 box-1 box-5 box-5 box-5 box-6 box-6 box-6";
     }
@@ -59,47 +59,102 @@
             </ul>
         </nav>
     </div>
+    
     <div class="grid-container">
-        <div class="box" style="grid-area: box-1">
-            <div class="avatarimg">
-                <img src="images/profilepicture.png" height="100px" width="100px">
+        <div class="box" style="grid-area: box-1; padding: 20px">
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <div class="avatarimg">
+                <img src="images/profilepicture.png" height="100px" width="100px" alt="Profile Picture">
+                </div>
+                <div>
+                <h3 style="margin-bottom: 10px;">17</h3>
+                <h3 class="RMspacing"><s>, ‘ , | , ‘ _ ‘</s></h3>
+                </div>
             </div>
-            <h2>Hey 👋</h2>
-
-            <p>I do graphic design and code stuff. <br> Cybersecurity, Motorsports and Pokemon fan.
+            <br>
+            <h3 class="RMspacing" style="padding-bottom: 10px;">Hey 👋</h3>
+            <p class="RMspacing">I do design and code stuff. Most of the time it doesn't work<br><br>Cybersecurity, Motorsports and Pokemon enjoyer 
             </p>
-
-            <h3 class="RMspacing" style="margin-top: 75px;"</h3>
-                What I know
-            </h3>
-            <p class="RMspacing" style="margin-top: 10px;">
-                <small>all placeholder until I add icons</small>
-                Python<br>
-                HTML<br>
-                CSS<br>
-                C<br>
-                SQL<br>
-                <br>
-                Figma<br>
-            </p>
-
-            
+            <br><br>
+            <h3 class="RMspacing" style="padding-bottom: 10px">What I Work With</h3>
+            <div style="display: flex; align-items: left; gap: 30px;">
+                <div>
+                    Python<br>
+                    HTML<br>
+                    CSS<br>
+                    C<br>
+                </div>
+                <div>
+                    SQL<br>
+                </div>
+                <div>
+                    Figma<br>
+                </div>
+            </div>
         </div>
-        <div class="box fill" style="grid-area: box-2">
-            <img src="images/snom.png">
+        <img src="images/Frame 5(2).png" 
+                alt="Topograpy Banner - Project A" 
+                style="grid-area: box-2; border-radius: 20px;""  
+                class="fit">
+        <div class="box" style="grid-area: box-3; padding: 25px">
+            <h2 class="RMspacing" style="padding-left: 2px;"</h3>
+                What I'm up to:
+            </h2>
+            <hr>
+            <table class="RMspacing" style="margin-top: 10px;">
+                <tr>
+                    <td><b>Contractor</b></td>
+                    <td>-</td>
+                    <td> Project A</td></tr>
+                <tr>
+                    <td><b>Developer</b></td>
+                    <td>-</td>
+                    <td> SFES</td></tr>
+                <tr>
+                    <td><b>Developer</b></td>
+                    <td>-</td>
+                    <td> URG</td></tr>
+            </table>
         </div>
-        <div class="box" style="grid-area: box-3">
-            <h1 class="RMspacing">Quote</h1>
-            "Lorem Ipsum Obligatory Quote"   
+        <div class="box" style="grid-area: box-4; padding: 25px;">
+            <h2 class="RMspacing">
+                Peripherals
+            </h2>
+            <hr>
+            <div style="display: flex; align-items: left; gap: 30px; padding-top: 4px">
+                <div>
+                    <b>PC</b><br>
+                    <b>Displays</b><br>
+                    <b>Keyboard</b><br>
+                    <b>Mouse</b><br>
+                    <b>Microphone</b><br>
+                    <b>Audio</b>
+                </div>
+                <div>
+                    i7-13700kf<br>
+                    Alienware 2720HF<br>
+                    Monsgeek M1<br>
+                    Razer Basilisk V3<br>
+                    Fifine A6T<br>
+                    Dell Somethings<br>
+                </div>
+                <div>
+                    RX 6600<br>
+                    Some MSI<br>
+                    Jwick T1<br>
+                    Attack Shark X3<br>
+                </div>
+            </div>
+            <p>More in Misc</p>
         </div>
-        <div class="box" style="grid-area: box-4">
-            I should put this block up for sale. 5$ adspace kinda thing
+        <div class="box centered" style="grid-area: box-5">
+            WIP.5
         </div>
-        <div class="box" style="grid-area: box-5">
-            <h1>WIP</h1>
+        <div class="box centered" style="grid-area: box-6">
+            WIP.6
         </div>
-        <div class="box" style="grid-area: box-6">
-            <h1>WIP</h1>
+        <div class="box centered" style="grid-area: box-7">
+            <h1>"Lock In"</h1>
         </div>
 
     </div>

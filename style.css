@@ -98,6 +98,8 @@ body {
     align-items: center;
 } 
 
+
+
 .accent {
     background-color: #c5e4f7;
 }
@@ -147,10 +149,42 @@ body {
     min-height: 100%;
 }
 
+/* .fit {
+    overflow: hidden;
+} */
+
+.fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* Fill and crop */
+    object-position: center;
+    display: block;         /* Remove inline spacing */
+}
+
+/* .fit img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+    display: block;
+    border-radius: 20px;
+} */
+
 /*TEXT MANIPULATION*/
 .RMspacing {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+
+table td:first-child {
+  text-align: left;
+  padding-right: 5px; /* add some spacing */
+  font-weight: bold;
+}
+table td:last-child {
+  text-align: left;
+  padding-left: 10px;
 }
