@@ -29,12 +29,14 @@ body {
 }
 
 .navbar {
-    background-color: #444444;
+    background-color: #393939;
     border-radius: 20px;
     max-width: 500px;
     padding: 0 5px;
     text-align: center;
+    outline: 1px solid #444444;
 }
+
 
 .navbar ul {
     display: flex;
@@ -80,16 +82,29 @@ body {
     }
     }
 
-
-/*BENTO GRID STUFF*/
-/* .main-content{
-    flex: 1 0 auto;
-} */
-
 .box {
     background-color: #393939;
     border-radius: 20px;
     padding: 10px;
+}
+
+.tags{
+    width: clamp(80px, 5vw, 95px);
+    max-height: clamp(40px, 2.5vw, 80px);
+    z-index: 1000;
+    background-color: #393939;
+    display: flex !important;
+    align-self: flex-end !important;
+    border-radius: 15px !important; 
+    justify-content: center;
+    align-items: center;     
+    text-align: center;
+    margin: 5px;
+}
+
+.tags p{
+    font-size: clamp(12px, 0.85vw, 18px);
+    margin: 0;
 }
 
 .centered{
@@ -98,7 +113,9 @@ body {
     align-items: center;
 } 
 
-
+.clickable{
+    height: 1000px
+}
 
 .accent {
     background-color: #c5e4f7;
@@ -122,6 +139,11 @@ body {
 
 
 /*IMG MANIPULATION*/
+
+img{
+    border-radius: 20px;
+}
+
 .centeredimg{
     display: flex;
     justify-content: center;
@@ -187,4 +209,20 @@ table td:first-child {
 table td:last-child {
   text-align: left;
   padding-left: 10px;
+}
+
+/* a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #393939
+} */
+
+.full-link {
+  display: block;       /* so it behaves like a block */
+  width: 100%;          /* fills container width */
+  height: 100%;         /* fills container height if set */
+  text-decoration: none; /* optional */
+  color: inherit;        /* keep text color */
 }
