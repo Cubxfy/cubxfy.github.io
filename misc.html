@@ -17,15 +17,19 @@
         margin-top: 20px;
         display: grid;
         grid-template-columns: repeat(12, 100px);
-        grid-template-rows: 75px repeat(2, 200px) 75px repeat(2, 200px) 75px 700px;
+        grid-template-rows: 125px 100px 75px repeat(2, 200px) 50px 75px repeat(2, 200px) 50px 75px 700px;
         gap: 10px;
         grid-template-areas:
+        "box-11 box-11 box-11 box-11 box-11 box-11 box-11 box-11 box-11 box-11 box-11 box-11"
+        ". . . . . . . . . . . ."
         "box-12 box-12 box-12 box-12 box-12 box-12 box-12 box-12 box-12 box-12 box-12 box-12"
         "box-13 box-13 box-13 box-13 box-13 box-14 box-14 box-14 box-14 box-14 box-14 box-14"
         "box-15 box-15 box-15 box-15 box-15 box-15 box-15 box-15 box-15 box-15 box-15 box-15"
+        ". . . . . . . . . . . ."
         "box-16 box-16 box-16 box-16 box-16 box-16 box-16 box-16 box-16 box-16 box-16 box-16"
         "box-17 box-17 box-17 box-17 box-18 box-18 box-18 box-18 box-19 box-19 box-19 box-19"
         "box-17 box-17 box-17 box-17 box-18 box-18 box-18 box-18 box-19 box-19 box-19 box-19"
+        ". . . . . . . . . . . ."
         "box-20 box-20 box-20 box-20 box-20 box-20 box-20 box-20 box-20 box-20 box-20 box-20"
         "box-21 box-21 box-21 box-21 box-21 box-21 box-22 box-22 box-22 box-22 box-22 box-22"
         "box-21 box-21 box-21 box-21 box-21 box-21 box-22 box-22 box-22 box-22 box-22 box-22"
@@ -54,9 +58,10 @@
             place-content: center;
             max-width: 95%;
             grid-template-columns: repeat(3, minmax(80px, 1fr));
-            grid-template-rows: 0.1fr repeat(3, 0.3fr) 0.1fr repeat(3, 0.3fr) 0.1fr repeat(2, 1fr);
+            grid-template-rows: 0.2fr 0.1fr repeat(3, 0.3fr) 0.1fr repeat(3, 0.3fr) 0.1fr repeat(2, 1fr);
             justify-content: center;
-            grid-template-areas: 
+            grid-template-areas:
+                "box-11 box-11 box-11"
                 "box-12 box-12 box-12"
                 "box-13 box-13 box-13"
                 "box-14 box-14 box-14"
@@ -88,6 +93,18 @@
 
 
     <div class="grid-container">
+        <div class="box" style="grid-area: box-11;place-content: center; align-content: center; background-color: #939393;">
+            <h1 class="RMspacing centered">A Collection of Stuff</h1>
+            <!-- <nav class="navbar" style="margin: 0 auto; background-color: #939393; outline: transparent;">
+                <ul>
+                    <li><a href="#TECHEDC">Tech & EDC</a></li>
+                    <li><a href="#PKMNCARDS">Pokemon</a></li>
+                    <li><a href="contact.html">Music Box</a></li>
+                    <li><a href="misc.html">Misc</a></li>
+                </ul>
+            </nav> -->
+        </div>
+
         <div class="box" style="grid-area: box-12; align-content: center; background-color: #939393;">
             <h1 class="RMspacing centered">Tech & EDC</h1>
         </div>
@@ -145,6 +162,7 @@
                 </div>
             </div>
         </div>
+
         <div class="box" style="grid-area: box-15; padding: 15px;">
             <h1 class="RMspacing">Stationary Recommendations</h1>
             <hr>
@@ -310,6 +328,7 @@
             </table>      
         </div>
         
+
         <div class="box" style="grid-area: box-20; align-content: center; background-color: #939393;">
             <h1 class="RMspacing centered"">Music Box</h1>
             <p class="RMspacing centered">Playlists on Spotify @Cubxfy | Some Songs and Albums I like</p>
