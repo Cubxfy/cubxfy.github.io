@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>this website is entirely html and css</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <style>
         .grid-container{
         overflow: visible;
@@ -28,7 +29,9 @@
             margin-top: 20px;
             margin-left: 10px;
             margin-right: 10px;
-            grid-template-columns: 1.6fr;
+            place-content: center;
+            max-width: 95%;
+            grid-template-columns: minmax(80px, 1fr);
             grid-template-rows: 250px 150px 50px 1fr;
             justify-content: center;
             grid-template-areas: 
@@ -59,7 +62,7 @@
             alt="Topograpy Banner - Project A" 
             style="grid-area: box-1;""  
             class="fit"> -->
-        <div class="box" style="grid-area: box-1; display: flex; background-color: #444444;">
+        <div class="box" style="grid-area: box-1; display: flex; background-color: #2C2C2C;">
             <p>img soon™</p>
         </div>
         <div class="box" style="grid-area: box-1; display: flex; background-color: transparent;">
@@ -78,14 +81,17 @@
 
         </div>
         <div class="box centered" style="grid-area: box-3">
-            <p>External Links WIP</p>
+            <a href="">
+                <button type="button" ><i class="fas fa-external-link"></i></button>
+            </a>
+            <p>Link WIP</p>
         </div>
     </div>
 
     <div class="grid-container">
         <img src="images/Frame 5(2).png" 
             alt="Topograpy Banner - Project A" 
-            style="grid-area: box-1;""  
+            style="grid-area: box-1; filter: grayscale(100%)""  
             class="fit">
         <div class="box" style="grid-area: box-1; display: flex; background-color: transparent;">
             <div class="box tags"><p>Figma</p></div>
@@ -102,7 +108,9 @@
 
         </div>
         <div class="box centered" style="grid-area: box-3">
-            <p>External Links WIP</p>
+            <a href="projectA.html">
+                <button type="button" ><i class="fas fa-external-link"></i></button>
+            </a>
         </div>
     </div>
 
@@ -111,7 +119,7 @@
             alt="Topograpy Banner - Project A" 
             style="grid-area: box-1;""  
             class="fit"> -->
-        <div class="box" style="grid-area: box-1; display: flex; background-color: #444444;">
+        <div class="box" style="grid-area: box-1; display: flex; background-color: #2C2C2C;">
             <p>img soon™</p>
         </div>
         <div class="box" style="grid-area: box-1; display: flex; background-color: transparent;">
@@ -128,7 +136,37 @@
 
         </div>
         <div class="box centered" style="grid-area: box-3">
-            <p class="centered">External Link</p>
+            <button type="button"><i class="fas fa-external-link"></i></button>
+            <p>Link WIP</p>
+        </div>
+
+    </div>
+
+        <div class="grid-container">
+        <!-- <img src="images/Frame 5(2).png" 
+            alt="Topograpy Banner - Project A" 
+            style="grid-area: box-1;""  
+            class="fit"> -->
+        <div class="box" style="grid-area: box-1; display: flex; background-color: #2C2C2C;">
+            <p>img soon™</p>
+        </div>
+        <div class="box" style="grid-area: box-1; display: flex; background-color: transparent;">
+            <div class="box tags"><p>HTML</p></div>
+            <div class="box tags"><p>CSS</p></div>
+        </div>
+
+        <div class="box" style="grid-area: box-2">
+            <h4 class="RMspacing" style="margin: 5px;">
+                Personal Portfolio
+            </h4>
+            <p class="RMspacing" style="margin: 5px;"> 
+                The website you're on right now. Everything is made purely with HTML and CSS
+            </p>
+
+        </div>
+        <div class="box centered" style="grid-area: box-3">
+            <button type="button"><i class="fas fa-external-link"></i></button>
+            <p>Link WIP</p>
         </div>
 
     </div>
@@ -137,7 +175,7 @@
 
     
     <div class="botbar">
-        <p>Last Updated: Today | Made by @Cubxfy</p>
+        <p>Last Updated: Today | Made by Cubxfy</p>
     </div>
 </body>
 </html>
