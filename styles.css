@@ -1,0 +1,37 @@
+.vertical-navbar {
+    display: flex;
+    flex-direction: column;        /* stack vertically */
+    align-items: stretch;          /* make buttons full width */
+    gap: 0.75rem;                  /* space between buttons */
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 15px;
+    width: 220px;                  /* fixed width */
+    backdrop-filter: blur(10px);   /* frosted-glass effect */
+}
+
+.link-button {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    color: var(--text-color, #fff);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   /* align icon & text to the left */
+    gap: 0.75rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);   /* slide slightly right on hover */
+}
+
+.link-button i {
+    color: var(--secondary-color, #4fc3f7);
+    font-size: 1.2rem;
+}
