@@ -45,7 +45,7 @@ body:has(#light:checked) {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     border-radius: 10px;
     display: flex;
     flex-direction: column; 
@@ -62,7 +62,7 @@ body:has(#light:checked) {
 .aboutme {
     display: flex;
     flex-direction: row;
-    height: 150px;
+    height: 100%;
     width: 100%;
 }
 
@@ -142,7 +142,7 @@ body:has(#light:checked) {
 
 .pgrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     gap: 1em;
 }
 
@@ -217,6 +217,11 @@ body:has(#light:checked) {
     text-decoration: none;
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
+}
+
+
+.plink:hover {
+    background-color: hsl(155, 15%, 40%);
 }
 
 .card-desc{
