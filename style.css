@@ -58,10 +58,39 @@ body:has(#light:checked) {
     width: 100%;
 }
 
+.right-profile h1 {
+    margin-bottom: 0;
+}
+
 .right-profile a{
     font-size: 15pt;
     text-decoration: none;
     color: var(--accent)
+}
+
+.right-profile p{
+    font-size: 25pt;
+    text-decoration: none;
+    color: var(--t);
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.modeToggle {
+    background-color: var(--sc);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5em;
+    text-align: center;
+    transition: border 0.3 ease;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.modeToggle:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    border-color: var(--accent); 
 }
 
 .sgrid {
@@ -90,10 +119,12 @@ body:has(#light:checked) {
 .pgrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 0.4em;
+    gap: 0.75em;
 }
 
 .pcard {
+    display: flex;
+    flex-direction: column;
     background-color: var(--sc);
     border-radius: 8px;
     overflow: hidden;
@@ -122,6 +153,9 @@ body:has(#light:checked) {
 
 .pdesc{
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .pdesc h3 {
@@ -151,9 +185,16 @@ body:has(#light:checked) {
 }
 
 .plink {
-    display: inline-block;
-    margin-top: 0.5rem;
-    font-weight: 600;
+    background-color: var(--accent);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5em;
+    text-align: center;
+    color: var(--t);
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
 .card-desc{
@@ -172,7 +213,7 @@ body:has(#light:checked) {
 
 
 .lcard {
-    background-color: var(--sc);
+    background-color: var(--accent);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -192,6 +233,12 @@ body:has(#light:checked) {
 .inline {
     display: flex;
     align-items: center;
+}
+
+.pinline{
+    margin-top: auto; 
+    display: flex;
+    justify-content: flex-end;
 }
 
 /*BOTBAR*/
