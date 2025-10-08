@@ -43,7 +43,7 @@ body:has(#light:checked) {
     flex-direction: column; 
     justify-content: center;
     margin: 0 auto;
-    gap: 100px;
+    gap: 50px;
     padding: 20px;
 }
 
@@ -59,7 +59,15 @@ body:has(#light:checked) {
 }
 
 .right-profile h1 {
-    margin-bottom: 0;
+    font-size: 30pt;
+    text-decoration: none;
+    color: var(--t);
+    margin-top: 1px; 
+    margin-bottom: 1px;
+}
+
+.right-profile h2 {
+    margin: 0px;
 }
 
 .right-profile a{
@@ -69,11 +77,8 @@ body:has(#light:checked) {
 }
 
 .right-profile p{
-    font-size: 25pt;
-    text-decoration: none;
-    color: var(--t);
-    margin-top: 10px; 
-    margin-bottom: 10px;
+    margin: 0px;
+    margin-bottom: 5px;
 }
 
 .modeToggle {
@@ -81,8 +86,11 @@ body:has(#light:checked) {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    padding: 0.5em;
-    text-align: center;
+    width: 40px; 
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: border 0.3 ease;
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
@@ -104,7 +112,7 @@ body:has(#light:checked) {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    padding: 1em;
+    padding: 0.6em;
     text-align: center;
     transition: border 0.3 ease;
     border: 2px solid transparent;
